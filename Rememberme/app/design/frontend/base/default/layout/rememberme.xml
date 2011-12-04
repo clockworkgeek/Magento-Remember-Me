@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout version="0.1.0">
+
+	<customer_logged_out>
+		<reference name="customer_form_mini_login">
+			<action method="setTemplate"><template>rememberme/form/mini.login.phtml</template></action>
+		</reference>
+	</customer_logged_out>
+
+	<customer_account_login>
+		<reference name="customer_form_login">
+			<action method="setTemplate"><template>rememberme/form/login.phtml</template></action>
+		</reference>
+	</customer_account_login>
+
+	<checkout_onepage_index>
+		<reference name="checkout.onepage.login">
+			<action method="setTemplate"><template>rememberme/onepage/login.phtml</template></action>
+		</reference>
+	</checkout_onepage_index>
+
+</layout>
