@@ -1,0 +1,104 @@
+<_>
+   <form_key>Pl1b6zSHjw720HdY</form_key>
+   <name>Rememberme</name>
+   <channel>magento-community</channel>
+   <version_ids>
+      <version_ids>2</version_ids>
+   </version_ids>
+   <summary>Add a &quot;remember me&quot; option to login forms.</summary>
+   <description>Add a &quot;remember me&quot; option to login forms. Overrides default forms with those in &quot;design/frontend/base/default/template/rememberme/form&quot;.</description>
+   <license>OSL v3.0</license>
+   <license_uri>http://www.opensource.org/licenses/osl-3.0.php</license_uri>
+   <version>0.3.2</version>
+   <stability>stable</stability>
+   <notes>Now packaged for Connect 2.0.
+
+If using a custom theme that modifies the login template please pay attention to &quot;design/frontend/base/default/template/rememberme/form/&quot; directory.
+
+For translations see the &quot;app/locale/en_US/Clockworkgeek_Rememberme.csv&quot; file.</notes>
+   <authors>
+      <name>
+         <name>clockworkgeek</name>
+      </name>
+      <user>
+         <user>nonproffessional</user>
+      </user>
+      <email>
+         <email>nonproffessional@clockworkgeek.com</email>
+      </email>
+   </authors>
+   <depends_php_min>5.2.0</depends_php_min>
+   <depends_php_max>6.0.0</depends_php_max>
+   <depends>
+      <package>
+         <name>
+            <name/>
+         </name>
+         <channel>
+            <channel/>
+         </channel>
+         <min>
+            <min/>
+         </min>
+         <max>
+            <max/>
+         </max>
+         <files>
+            <files>             </files>
+         </files>
+      </package>
+      <extension>
+         <name>
+            <name>Core</name>
+         </name>
+         <min>
+            <min/>
+         </min>
+         <max>
+            <max/>
+         </max>
+      </extension>
+   </depends>
+   <contents>
+      <target>
+         <target>magelocal</target>
+         <target>magecommunity</target>
+         <target>magedesign</target>
+         <target>magedesign</target>
+         <target>mageetc</target>
+         <target>magelocale</target>
+      </target>
+      <path>
+         <path/>
+         <path>Clockworkgeek/Rememberme</path>
+         <path>frontend/base/default/layout/rememberme.xml</path>
+         <path>frontend/base/default/template/rememberme/form</path>
+         <path>modules/Clockworkgeek_Rememberme.xml</path>
+         <path>en_US/Clockworkgeek_Rememberme.csv</path>
+      </path>
+      <type>
+         <type>file</type>
+         <type>dir</type>
+         <type>file</type>
+         <type>dir</type>
+         <type>file</type>
+         <type>file</type>
+      </type>
+      <include>
+         <include/>
+         <include/>
+         <include/>
+         <include/>
+         <include/>
+         <include/>
+      </include>
+      <ignore>
+         <ignore/>
+         <ignore/>
+         <ignore/>
+         <ignore/>
+         <ignore/>
+         <ignore/>
+      </ignore>
+   </contents>
+</_>
