@@ -64,8 +64,13 @@
 <?php /* Begin rememberme customisation */ ?>
                         <li>
                             <div class="input-box">
-                                <label for="rememberme" class="input-box"><input type="checkbox" name="login[rememberme]" class="checkbox left" id="rememberme" title="<?php echo $this->__('Remember me') ?>" style="margin-top: 2px" />
-                                <?php echo $this->__('Remember me on this computer') ?></label>
+                                <label for="rememberme" class="input-box">
+                                <input type="checkbox" name="login[rememberme]" class="checkbox left" id="rememberme" title="<?php echo $this->__('Remember me') ?>" style="margin-top: 2px" <?php if (Mage::getStoreConfigFlag('customer/rememberme/checked')) echo 'checked="checked"'; ?>/>
+                                <?php echo $this->__('Remember me on this computer') ?>
+                                </label>
+                                <?php if (Mage::getStoreConfigFlag('customer/rememberme/warning')): ?>
+                                <p><strong><?php echo $this->__('Caution!') ?></strong> <?php echo $this->__('Anyone using this computer might be able to access your account if you check this box.') ?></p>
+                                <?php endif; ?>
                             </div>
                         </li>
 <?php /* End rememberme customisation */ ?>
