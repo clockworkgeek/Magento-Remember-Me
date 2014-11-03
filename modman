@@ -1,0 +1,5 @@
+app/code/community/Clockworkgeek/Rememberme             app/code/community/Clockworkgeek/Rememberme
+app/design/frontend/base/default/template/rememberme    app/design/frontend/base/default/template/rememberme
+app/design/frontend/base/default/layout/rememberme.xml  app/design/frontend/base/default/layout/rememberme.xml
+app/etc/modules/Clockworkgeek_Rememberme.xml            app/etc/modules/Clockworkgeek_Rememberme.xml
+app/locale/en_US/Clockworkgeek_Rememberme.csv           app/locale/en_US/Clockworkgeek_Rememberme.csv
