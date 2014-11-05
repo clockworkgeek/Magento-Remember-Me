@@ -24,6 +24,8 @@
  * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
  */
 ?>
+<?php /* Extensions placeholder */ ?>
+<?php echo $this->getChildHtml('checkout.onepage.login.extra')?>
 <div class="col2-set">
     <?php echo $this->getChildHtml('login_before')?>
     <div class="col-1">
@@ -64,6 +66,7 @@
         <?php echo $this->getMessagesBlock()->getGroupedHtml() ?>
         <form id="login-form" action="<?php echo $this->getPostAction() ?>" method="post">
         <fieldset>
+            <?php echo $this->getBlockHtml('formkey'); ?>
             <h4><?php echo $this->__('Already registered?') ?></h4>
             <p><?php echo $this->__('Please log in below:') ?></p>
             <ul class="form-list">
