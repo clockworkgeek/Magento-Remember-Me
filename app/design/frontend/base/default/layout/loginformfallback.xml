@@ -8,6 +8,14 @@
             <block type="core/text_list" name="form.additional.info" />
         </reference>
     </customer_account_login>
+    <checkout_onepage_index>
+        <reference name="checkout.onepage.login">
+        	<action method="setTemplate">
+        		<template>loginformfallback/checkout/login.phtml</template>
+        	</action>
+            <block type="core/text_list" name="form.additional.info" />
+        </reference>
+    </checkout_onepage_index>
 
 <!-- More handles to fix if necessary
 
@@ -21,14 +29,6 @@
             <block type="core/text_list" name="form.additional.info" />
         </reference>
     </customer_account_create>
-    <checkout_onepage_index>
-        <reference name="checkout.onepage.login">
-            <block type="core/text_list" name="form.additional.info" />
-        </reference>
-        <reference name="checkout.onepage.billing">
-            <block type="core/text_list" name="form.additional.info" />
-        </reference>
-    </checkout_onepage_index>
 -->
 
 </layout>

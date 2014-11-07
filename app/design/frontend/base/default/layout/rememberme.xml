@@ -14,8 +14,8 @@
 	</customer_account_login>
 
 	<checkout_onepage_index>
-		<reference name="checkout.onepage.login">
-			<action method="setTemplate"><template>rememberme/onepage/login.phtml</template></action>
+		<reference name="form.additional.info">
+			<block type="core/template" name="customer.form.login.rememberme" template="rememberme/checkbox.phtml" />
 		</reference>
 	</checkout_onepage_index>
 
