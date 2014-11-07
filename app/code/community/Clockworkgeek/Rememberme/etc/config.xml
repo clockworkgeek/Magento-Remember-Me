@@ -19,7 +19,7 @@
 <config>
 	<modules>
 		<Clockworkgeek_Rememberme>
-			<version>0.4.0</version>
+			<version>0.5.0</version>
 		</Clockworkgeek_Rememberme>
 	</modules>
 	<global>

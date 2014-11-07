@@ -1,18 +1,17 @@
 <_>
-   <form_key>6cMLJhCPyrBhgC9P</form_key>
+   <form_key>JhBQI0YXFA7AhpyD</form_key>
    <name>Clockworkgeek_Rememberme</name>
    <channel>community</channel>
    <version_ids>
       <version_ids>2</version_ids>
    </version_ids>
    <summary>Add a &quot;remember me&quot; option to login forms.</summary>
-   <description>Add a &quot;remember me&quot; option to login forms. Overrides default forms with those in &quot;design/frontend/base/default/template/rememberme/form&quot;.</description>
+   <description>Add a &quot;remember me&quot; option to login forms. Overrides default forms with those in &quot;design/frontend/base/default/template/rememberme/&quot;.</description>
    <license>OSL v3.0</license>
    <license_uri>http://www.opensource.org/licenses/osl-3.0.php</license_uri>
-   <version>0.4.0</version>
+   <version>0.5.0</version>
    <stability>stable</stability>
-   <notes>Two new options have been added in System &gt; Configuration &gt; Customer Configuration &gt; Remember Me.
-</notes>
+   <notes>Improved compatibility with all versions and Mage_Captcha and Mage_Persistent modules.</notes>
    <authors>
       <name>
          <name>clockworkgeek</name>
@@ -41,7 +40,7 @@
             <max/>
          </max>
          <files>
-            <files>                  </files>
+            <files>                     </files>
          </files>
       </package>
       <extension>
