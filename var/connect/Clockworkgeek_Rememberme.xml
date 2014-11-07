@@ -1,5 +1,5 @@
 <_>
-   <form_key>xe9ApEUHpllhGSpN</form_key>
+   <form_key>6cMLJhCPyrBhgC9P</form_key>
    <name>Clockworkgeek_Rememberme</name>
    <channel>community</channel>
    <version_ids>
@@ -41,7 +41,7 @@
             <max/>
          </max>
          <files>
-            <files>                 </files>
+            <files>                  </files>
          </files>
       </package>
       <extension>
@@ -60,6 +60,9 @@
       <target>
          <target>magelocal</target>
          <target>magecommunity</target>
+         <target>magecommunity</target>
+         <target>magedesign</target>
+         <target>magedesign</target>
          <target>magedesign</target>
          <target>magedesign</target>
          <target>mageetc</target>
@@ -67,16 +70,22 @@
       </target>
       <path>
          <path/>
+         <path>Clockworkgeek/Loginformfallback</path>
          <path>Clockworkgeek/Rememberme</path>
+         <path>frontend/base/default/layout/loginformfallback.xml</path>
          <path>frontend/base/default/layout/rememberme.xml</path>
-         <path>frontend/base/default/template/rememberme/form</path>
+         <path>frontend/base/default/template/loginformfallback</path>
+         <path>frontend/base/default/template/rememberme</path>
          <path>modules/Clockworkgeek_Rememberme.xml</path>
          <path>en_US/Clockworkgeek_Rememberme.csv</path>
       </path>
       <type>
          <type>file</type>
          <type>dir</type>
+         <type>dir</type>
          <type>file</type>
+         <type>file</type>
+         <type>dir</type>
          <type>dir</type>
          <type>file</type>
          <type>file</type>
@@ -88,8 +97,14 @@
          <include/>
          <include/>
          <include/>
+         <include/>
+         <include/>
+         <include/>
       </include>
       <ignore>
+         <ignore/>
+         <ignore/>
+         <ignore/>
          <ignore/>
          <ignore/>
          <ignore/>

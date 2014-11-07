@@ -20,7 +20,7 @@
  *
  * @category    design
  * @package     base_default
- * @copyright   Copyright (c) 2010 Magento Inc. (http://www.magentocommerce.com)
+ * @copyright   Copyright (c) 2014 Magento Inc. (http://www.magentocommerce.com)
  * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
  */
 ?>
@@ -30,6 +30,7 @@
  *
  * @see Mage_Customer_Block_Form_Login
  */
+/** @var $this Mage_Customer_Block_Form_Login */
 ?>
 <div class="account-login">
     <div class="page-title">
@@ -55,7 +56,7 @@
                         <li>
                             <label for="email" class="required"><em>*</em><?php echo $this->__('Email Address') ?></label>
                             <div class="input-box">
-                                <input type="text" name="login[username]" value="<?php echo $this->htmlEscape($this->getUsername()) ?>" id="email" class="input-text required-entry validate-email" title="<?php echo $this->__('Email Address') ?>" />
+                                <input type="text" name="login[username]" value="<?php echo $this->escapeHtml($this->getUsername()) ?>" id="email" class="input-text required-entry validate-email" title="<?php echo $this->__('Email Address') ?>" />
                             </div>
                         </li>
                         <li>
@@ -64,20 +65,10 @@
                                 <input type="password" name="login[password]" class="input-text required-entry validate-password" id="pass" title="<?php echo $this->__('Password') ?>" />
                             </div>
                         </li>
-<?php /* Begin rememberme customisation */ ?>
-                        <li>
-                            <div class="input-box">
-                                <label for="rememberme" class="input-box">
-                                <input type="checkbox" name="login[rememberme]" class="checkbox left" id="rememberme" title="<?php echo $this->__('Remember me') ?>" style="margin-top: 2px" <?php if (Mage::getStoreConfigFlag('customer/rememberme/checked')) echo 'checked="checked"'; ?>/>
-                                <?php echo $this->__('Remember me on this computer') ?>
-                                </label>
-                                <?php if (Mage::getStoreConfigFlag('customer/rememberme/warning')): ?>
-                                <p><strong><?php echo $this->__('Caution!') ?></strong> <?php echo $this->__('Anyone using this computer might be able to access your account if you check this box.') ?></p>
-                                <?php endif; ?>
-                            </div>
-                        </li>
-<?php /* End rememberme customisation */ ?>
+                        <?php echo $this->getChildHtml('form.additional.info'); ?>
+                        <?php echo $this->getChildHtml('persistent.remember.me'); ?>
                     </ul>
+                    <?php echo $this->getChildHtml('persistent.remember.me.tooltip'); ?>
                     <p class="required"><?php echo $this->__('* Required Fields') ?></p>
                 </div>
             </div>
@@ -95,6 +86,9 @@
                 </div>
             </div>
         </div>
+        <?php if (Mage::helper('checkout')->isContextCheckout()): ?>
+            <input name="context" type="hidden" value="checkout" />
+        <?php endif; ?>
     </form>
     <script type="text/javascript">
     //<![CDATA[

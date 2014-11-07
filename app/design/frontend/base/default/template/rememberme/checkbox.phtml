@@ -1,0 +1,29 @@
+<?php
+/**
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/osl-3.0.php
+ *
+ *
+ * @category   Customer
+ * @package    Clockworkgeek_Rememberme
+ * @author     Daniel Deady <daniel@clockworkgeek.com>
+ * @copyright  Copyright (c) 2010, Daniel Deady
+ * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+/* @var $this Mage_Core_Block_Template */
+?>
+<li>
+    <div class="input-box">
+        <label for="rememberme" class="input-box">
+        <input type="checkbox" name="login[rememberme]" class="checkbox left" id="rememberme" title="<?php echo $this->__('Remember me') ?>" style="margin-top: 3px" <?php if (Mage::getStoreConfigFlag('customer/rememberme/checked')) echo 'checked="checked"'; ?>/>
+        <?php echo $this->__('Remember me on this computer') ?>
+        </label>
+<?php if (Mage::getStoreConfigFlag('customer/rememberme/warning')): ?>
+        <p><strong><?php echo $this->__('Caution!') ?></strong> <?php echo $this->__('Anyone using this computer might be able to access your account if you check this box.') ?></p>
+<?php endif; ?>
+    </div>
+</li>

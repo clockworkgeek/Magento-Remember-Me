@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout>
+    <customer_account_login>
+        <reference name="customer_form_login">
+        	<action method="setTemplate">
+        		<template>loginformfallback/form/login.phtml</template>
+        	</action>
+            <block type="core/text_list" name="form.additional.info" />
+        </reference>
+    </customer_account_login>
+
+<!-- More handles to fix if necessary
+
+    <customer_account_forgotpassword>
+        <reference name="forgotPassword">
+            <block type="core/text_list" name="form.additional.info" />
+        </reference>
+    </customer_account_forgotpassword>
+    <customer_account_create>
+        <reference name="customer_form_register">
+            <block type="core/text_list" name="form.additional.info" />
+        </reference>
+    </customer_account_create>
+    <checkout_onepage_index>
+        <reference name="checkout.onepage.login">
+            <block type="core/text_list" name="form.additional.info" />
+        </reference>
+        <reference name="checkout.onepage.billing">
+            <block type="core/text_list" name="form.additional.info" />
+        </reference>
+    </checkout_onepage_index>
+-->
+
+</layout>
