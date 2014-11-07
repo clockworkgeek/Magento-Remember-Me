@@ -1,9 +1,10 @@
 app/code/community/Clockworkgeek/Loginformfallback             app/code/community/Clockworkgeek/Loginformfallback
-app/code/community/Clockworkgeek/Rememberme                  app/code/community/Clockworkgeek/Rememberme
+app/code/community/Clockworkgeek/Rememberme                    app/code/community/Clockworkgeek/Rememberme
 app/design/frontend/base/default/template/loginformfallback    app/design/frontend/base/default/template/loginformfallback
-app/design/frontend/base/default/template/rememberme         app/design/frontend/base/default/template/rememberme
+app/design/frontend/base/default/template/rememberme           app/design/frontend/base/default/template/rememberme
+app/design/frontend/rwd/default/template/rememberme            app/design/frontend/rwd/default/template/rememberme
 app/design/frontend/base/default/layout/loginformfallback.xml  app/design/frontend/base/default/layout/loginformfallback.xml
-app/design/frontend/base/default/layout/rememberme.xml       app/design/frontend/base/default/layout/rememberme.xml
-app/etc/modules/Clockworkgeek_Rememberme.xml                 app/etc/modules/Clockworkgeek_Rememberme.xml
-app/locale/en_US/Clockworkgeek_Rememberme.csv                app/locale/en_US/Clockworkgeek_Rememberme.csv
-var/connect/Clockworkgeek_Rememberme.xml                     var/connect/Clockworkgeek_Rememberme.xml
+app/design/frontend/base/default/layout/rememberme.xml         app/design/frontend/base/default/layout/rememberme.xml
+app/etc/modules/Clockworkgeek_Rememberme.xml                   app/etc/modules/Clockworkgeek_Rememberme.xml
+app/locale/en_US/Clockworkgeek_Rememberme.csv                  app/locale/en_US/Clockworkgeek_Rememberme.csv
+var/connect/Clockworkgeek_Rememberme.xml                       var/connect/Clockworkgeek_Rememberme.xml
