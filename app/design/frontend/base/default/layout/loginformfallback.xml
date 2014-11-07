@@ -3,7 +3,7 @@
     <customer_account_login>
         <reference name="customer_form_login">
         	<action method="setTemplate">
-        		<template>loginformfallback/form/login.phtml</template>
+        		<template>loginformfallback/customer/login.phtml</template>
         	</action>
             <block type="core/text_list" name="form.additional.info" />
         </reference>
