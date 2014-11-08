@@ -3,7 +3,7 @@
   "type":"magento-module",
   "license":"OSL-3.0",
   "homepage":"https://github.com/clockworkgeek/Magento-Remember-Me",
-  "description":"Adds a "remember me" option to Magento login forms.",
+  "description":"Adds a 'remember me' option to Magento login forms.",
   "authors":[
     {
       "name":"Daniel Deady",
