@@ -10,7 +10,7 @@
       "email":"daniel@clockworkgeek.com"
     }
   ],
-  "require":{
+  "suggest":{
     "magento-hackathon/magento-composer-installer":"*"
   }
 }
