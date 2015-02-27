@@ -63,6 +63,15 @@
 					</clockworkgeek_rememberme>
 				</observers>
 			</customer_logout>
+			<controller_front_send_response_after>
+				<!-- Last possible event -->
+				<observers>
+					<clockworkgeek_rememberme>
+						<class>clockworkgeek_rememberme/cookie</class>
+						<method>setSessionExpiry</method>
+					</clockworkgeek_rememberme>
+				</observers>
+			</controller_front_send_response_after>
 		</events>
 		<translate>
 			<modules>

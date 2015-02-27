@@ -61,5 +61,21 @@ class Clockworkgeek_Rememberme_Model_Cookie extends Mage_Core_Model_Cookie
 		if (isset($_SESSION['rememberme'])) unset($_SESSION['rememberme']);
 	}
 
+	/**
+	 * Session is saved last, after page is output and sent.
+	 * If saved in database then session has an individual expiry time.
+	 */
+	public function setSessionExpiry()
+	{
+	   if (isset($_SESSION['rememberme']) && $_SESSION['rememberme']) {
+	       /* @var $store Mage_Core_Model_Store */
+	       $store = Mage::app()->getStore();
+	       if (!$store->isAdmin()) {
+	           // session expiry is taken from cookie lifetime
+	           $store->setConfig('web/cookie/cookie_lifetime', 60*60*24*365);
+	       }
+	   }
+	}
+
 }
 
