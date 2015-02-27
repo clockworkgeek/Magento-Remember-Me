@@ -37,7 +37,7 @@ class Clockworkgeek_Rememberme_Model_Cookie extends Mage_Core_Model_Cookie
 			$session = ( isset($_SESSION['rememberme']) ? (bool)$_SESSION['rememberme'] : false );
 			$login = Mage::app()->getRequest()->getPost('login');
 			$rememberme = ( isset($login['rememberme']) ? (bool)$login['rememberme'] : false );
-			$period = $session || $rememberme; // true = one year
+			if ($session || $rememberme) $period = true; // true = one year
 		}
 		return parent::set($name, $value, $period, $path, $domain, $secure, $httponly);
 	}
