@@ -50,16 +50,18 @@
 			<customer_login>
 				<observers>
 					<clockworkgeek_rememberme>
-						<class>clockworkgeek_rememberme/cookie</class>
+						<class>clockworkgeek_rememberme/observer</class>
 						<method>setSessionRemembrance</method>
+						<type>singleton</type>
 					</clockworkgeek_rememberme>
 				</observers>
 			</customer_login>
 			<customer_logout>
 				<observers>
 					<clockworkgeek_rememberme>
-						<class>clockworkgeek_rememberme/cookie</class>
+						<class>clockworkgeek_rememberme/observer</class>
 						<method>unsetSessionRemembrance</method>
+						<type>singleton</type>
 					</clockworkgeek_rememberme>
 				</observers>
 			</customer_logout>
@@ -67,8 +69,9 @@
 				<!-- Last possible event -->
 				<observers>
 					<clockworkgeek_rememberme>
-						<class>clockworkgeek_rememberme/cookie</class>
+						<class>clockworkgeek_rememberme/observer</class>
 						<method>setSessionExpiry</method>
+						<type>singleton</type>
 					</clockworkgeek_rememberme>
 				</observers>
 			</controller_front_send_response_after>
